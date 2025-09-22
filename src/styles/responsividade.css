@@ -1,0 +1,22 @@
+
+@media (max-width: 768px) {
+  .container{
+  
+  margin: 30px
+}
+  .inputs{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap:15px;
+  }
+  input,select,button{
+    width:100%;
+     
+  }
+  .box-resultado{
+    margin-top: 40px;
+    
+  }
+}
