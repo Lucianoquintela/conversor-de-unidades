@@ -1,0 +1,68 @@
+:root {
+  --cor-background:  #4A2D8A;
+  --cor-texto: #ffffff;
+  --resultado-fundo-card: #6B4FA1;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body{
+  background-color: var(--cor-background)
+  
+}
+
+.container{
+  
+  margin: 50px
+}
+h1{
+  color:var(--cor-texto);
+}
+.inputs{
+  
+  display: flex;
+  gap:10px;
+  margin-top: 20px;
+}
+
+input,select,button{
+  padding:10px;
+  height: 100%;
+  font-weight: bold;
+}
+
+.box-resultado{
+  background-color: var(--resultado-fundo-card);
+  margin-top: 20px;
+  padding:10px;
+  color:var(--cor-texto);
+  
+  
+}
+
+/* === Regras só para celular === */
+@media (max-width: 768px) {
+  .container{
+  
+  margin: 30px
+}
+  .inputs{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap:15px;
+  }
+  input,select,button{
+    width:100%;
+     
+  }
+  .box-resultado{
+    margin-top: 40px;
+    
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <title>Coversor de Unidades</title>
+</head>
+
+<body>
+  <section class="container">
+
+    <h1>Conversor de unidades</h1>
+
+    <div class="inputs">
+      <div>
+        <input type="number" placeholder="Digitar valor" id="valorInicial" required>
+      </div>
+
+      <div>
+        <select id="tipo-conversao">
+          <option value="milhas-km">Milhas para Quilômetros</option>
+          <option value="km-milhas">Quilômetros para Milhas</option>
+          <option value="celsius-fahrenheit">Celsius para Fahrenheit</option>
+          <option value="fahrenheit-celsius">Fahrenheit para Celsius</option>
+        </select>
+      </div>
+
+      <div>
+        <button onclick="converterValores()">Converter</button>
+      </div>
+    </div>
+
+    <div class="box-resultado">
+      <p><b>Resultado:</b> <span id="resultado"></span></p>
+    </div>
+
+  </section>
+
+  <script src="./src/scripts/script.js"></script>
+</body>
+</html>
